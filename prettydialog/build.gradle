@@ -1,8 +1,26 @@
 apply plugin: 'com.android.library'
 ext {
-    PUBLISH_GROUP_ID = "com.rahuljanagouda.prettydialog"
-    PUBLISH_ARTIFACT_ID = "prettydialog"
-    PUBLISH_VERSION = "1.0.0"
+    bintrayRepo = 'maven'
+    bintrayName = 'prettydialog'
+
+    publishedGroupId = 'com.rahuljanagouda'
+    libraryName = 'prettydialog'
+    artifact = 'prettydialog'
+
+    libraryDescription = 'A beautiful dialog'
+
+    siteUrl = 'https://github.com/RahulJanagouda'
+    gitUrl = 'https://github.com/RahulJanagouda/prettydialog.git'
+
+    libraryVersion = '1.0.0'
+
+    developerId = 'rj'
+    developerName = 'Rahul Janagouda'
+    developerEmail = 'rahul.janagouda@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
 }
 android {
     compileSdkVersion 23
@@ -29,3 +47,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.2.1'
 }
+
+
+apply from: 'https://raw.githubusercontent.com/numetriclabz/jcenter/master/installv.gradle'
+apply from: 'https://raw.githubusercontent.com/numetriclabz/jcenter/master/bintrayv.gradle'
