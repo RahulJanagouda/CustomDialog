@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/white"
+    android:paddingTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Welcome back!"
+        android:textColor="@android:color/black"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Are you ready for your fitness activity?"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+    <ImageView
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:src="@drawable/bg_temp"
+        android:layout_width="150dp"
+        android:layout_height="200dp" />
+    <TextView
+        android:id="@+id/click_me"
+        android:clickable="true"
+        android:focusable="true"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="@android:color/black"
+        android:background="?attr/selectableItemBackground"
+        android:text="Schedule An Activity"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/listPreferredItemHeight" />
+
+</LinearLayout>
